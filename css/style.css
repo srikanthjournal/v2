@@ -1,0 +1,385 @@
+body{
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* HEADER */
+.topbar{
+    background:#2c4f9e;
+    color:#fff;
+    padding:6px 0;
+    font-size:14px;
+}
+.topbar a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.nav-link{
+    font-weight:500;
+    transition:0.3s;
+}
+.nav-link:hover{
+    color:#2c4f9e;
+}
+
+.mega-menu{
+    border-top:3px solid #2c4f9e;
+}
+
+/* News */
+.news{
+    background:#f4c430;
+    padding:6px 0;
+}
+.ticker{
+    overflow:hidden;
+    white-space:nowrap;
+}
+.ticker span{
+    display:inline-block;
+    padding-left:100%;
+    animation:scroll 18s linear infinite;
+}
+@keyframes scroll{
+    0%{transform:translateX(0)}
+    100%{transform:translateX(-100%)}
+}
+
+/* BODY */
+.hero{
+    background:#f3f4f6;
+    padding:100px 0;
+}
+.hero h1{
+    font-size:48px;
+    font-weight:700;
+}
+
+.counters{
+    background:#f8f9fa;
+}
+.counter{
+    font-size:40px;
+    font-weight:bold;
+    color:#2c4f9e;
+}
+
+.features{
+    background:#ffffff;
+    padding:60px 0;
+}
+.feature-icon{
+    font-size:40px;
+    color:#2c4f9e;
+}
+
+/* FOOTER */
+.footer{
+    background:#2c4f9e;
+    color:#fff;
+    padding:60px 0;
+}
+.footer a{
+    color:#fff;
+    text-decoration:none;
+}
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.2);
+    padding-top:15px;
+}
+
+
+
+
+/* =========================
+   ULTRA PREMIUM FEATURES
+========================= */
+
+.journal-features{
+    position:relative;
+    padding:120px 0;
+    overflow:hidden;
+    background:linear-gradient(-45deg,#e9f1ff,#f8f9fa,#eef3ff,#f9fbff);
+    background-size:400% 400%;
+    animation:gradientMove 12s ease infinite;
+}
+
+/* Animated Gradient */
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Floating shapes */
+.floating-shapes span{
+    position:absolute;
+    display:block;
+    width:60px;
+    height:60px;
+    background:rgba(44,79,158,0.08);
+    border-radius:50%;
+    animation:float 12s infinite ease-in-out;
+}
+
+.floating-shapes span:nth-child(1){top:10%;left:15%;}
+.floating-shapes span:nth-child(2){top:70%;left:80%;width:80px;height:80px;}
+.floating-shapes span:nth-child(3){top:40%;left:5%;}
+.floating-shapes span:nth-child(4){top:20%;left:75%;}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-40px);}
+    100%{transform:translateY(0);}
+}
+
+/* Glass Effect */
+.glass{
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:40px 20px;
+    transition:all 0.5s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Hover Micro Interaction */
+.glass:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 20px 50px rgba(44,79,158,0.2);
+}
+
+/* Icon circle */
+.icon-circle{
+    width:80px;
+    height:80px;
+    margin:0 auto 25px;
+    background:white;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.icon-circle i{
+    font-size:32px;
+    color:#2c4f9e;
+}
+
+/* Hover icon animation */
+.glass:hover .icon-circle{
+    transform:rotate(8deg) scale(1.1);
+    box-shadow:0 15px 40px rgba(44,79,158,0.3);
+}
+
+/* Scroll reveal */
+.reveal{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .journal-features{
+        padding:80px 20px;
+    }
+}
+
+
+/* ===============================
+   MAIN JOURNAL SECTION
+================================ */
+
+.journal-main{
+    background:#f4f6fb;
+    padding:60px 0;
+}
+
+.journal-grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap:30px;
+}
+
+/* Cards */
+.card-box{
+    background:#ffffff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom:20px;
+}
+
+.card-box h4{
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.card-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.card-box ul li{
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card-box ul li:hover{
+    padding-left:8px;
+    color:#2c4f9e;
+}
+
+/* CTA */
+.cta-box{
+    background:#2c4f9e;
+    color:#fff;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.cta-box button{
+    margin-top:15px;
+    background:#ffc107;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-weight:600;
+}
+
+/* Welcome */
+.welcome-box h2{
+    margin-bottom:15px;
+}
+
+/* Section title */
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:25px 0;
+}
+
+.badge{
+    background:#e9edf7;
+    padding:4px 8px;
+    border-radius:5px;
+    font-size:12px;
+}
+
+/* Paper card */
+.paper-card{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.paper-card:hover{
+    transform:translateY(-5px);
+}
+
+.paper-tags span{
+    background:#eef1fa;
+    padding:4px 8px;
+    font-size:12px;
+    border-radius:4px;
+    margin-right:5px;
+}
+
+.paper-card h4{
+    margin:10px 0;
+    color:#2c4f9e;
+}
+
+.author{
+    font-size:14px;
+    color:#666;
+}
+
+/* Buttons */
+.paper-actions{
+    margin-top:15px;
+}
+
+.btn-light{
+    background:#f1f1f1;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    margin-right:10px;
+}
+
+.btn-primary{
+    background:#2c4f9e;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+/* News */
+.news-item{
+    border-bottom:1px solid #eee;
+    padding:10px 0;
+}
+
+.news-item small{
+    color:#999;
+}
+
+/* Index grid */
+.index-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.index-grid span{
+    background:#f1f3f9;
+    padding:10px;
+    text-align:center;
+    border-radius:5px;
+    font-size:13px;
+}
+
+/* QR box */
+.qr-box{
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f8f9fa;
+    border:2px dashed #ccc;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+    .journal-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* Sticky Sidebars */
+.sidebar-left,
+.sidebar-right{
+    position:sticky;
+    top:120px;
+}
