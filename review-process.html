@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<title>Peer Review Process — IJITRA</title>
+<meta name="description" content="A complete guide to IJITRA's double-blind peer review process, reviewer criteria, decision types, timelines, and how to appeal.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/review-process.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="issn-badge">ISSN: 2584-8119 (Online)</span>
+      <span class="topbar-divider">|</span>
+      <span>Peer-Reviewed &nbsp;·&nbsp; Open Access &nbsp;·&nbsp; DOI: 10.12345/ijitra</span>
+    </div>
+    <div class="topbar-right">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-brand-row">
+    <div class="journal-logo">
+      <div class="logo-abbr">IJ</div>
+      <div class="logo-sub">ITRA</div>
+    </div>
+    <div class="journal-title-block">
+      <div class="journal-abbr-name"><span>IJITRA</span></div>
+      <div class="journal-full-name">International Journal of Innovative Technology, Innovation and Research Applications</div>
+    </div>
+    <div class="header-actions">
+      <a href="submit.html" class="btn-submit">✦ Submit Manuscript</a>
+      <div class="header-metrics">
+        <span><span class="metric-dot"></span> Impact Factor: 6.142</span>
+        <span><span class="metric-dot"></span> H-Index: 14</span>
+        <span><span class="metric-dot"></span> CiteScore: 4.8</span>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <a href="about.html" class="nav-link">About <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">About IJITRA</a>
+          <a href="editorial-board.html">Editorial Board</a>
+          <a href="ethics.html">Ethics &amp; Policy</a>
+          <a href="indexing.html">Indexing</a>
+        </div>
+      </div>
+      <a href="editorial-board.html" class="nav-link">Editorial Board</a>
+      <div class="nav-item">
+        <a href="current-issue.html" class="nav-link">Issues <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="current-issue.html">Current Issue</a>
+          <a href="archives.html">Archives</a>
+          <a href="special-issues.html">Special Issues</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="guidelines.html" class="nav-link">For Authors <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="guidelines.html">Author Guidelines</a>
+          <a href="submit.html">Submit Manuscript</a>
+          <a href="review-process.html">Review Process</a>
+          <a href="apc.html">APC / Charges</a>
+        </div>
+      </div>
+      <a href="indexing.html" class="nav-link">Indexing</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="nav-search-wrap">
+        <input id="searchInput" class="nav-search-input" type="text" placeholder="Search articles…">
+        <button id="searchBtn" class="nav-search-btn">Search</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="page-banner">
+  <div class="page-banner-inner">
+    <div class="page-breadcrumb"><a href="index.html">Home</a> › Review Process</div>
+    <h1>Peer Review Process</h1>
+    <p>IJITRA uses a rigorous double-blind peer review system ensuring fairness, quality, and scientific integrity in every publication decision.</p>
+  </div>
+</div>
+
+<div class="main-wrapper wide-sidebar">
+  <main>
+
+    <!-- Timeline Summary -->
+    <div class="card mb-24" data-animate>
+      <div class="section-header mt-0">
+        <h2>Average Timeline at a Glance</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline-summary">
+        <div class="ts-cell"><span class="ts-days">24h</span><span class="ts-label">Acknowledgement</span></div>
+        <div class="ts-cell"><span class="ts-days">3–5</span><span class="ts-label">Desk Review (days)</span></div>
+        <div class="ts-cell"><span class="ts-days">2–3</span><span class="ts-label">Reviewer Assignment (days)</span></div>
+        <div class="ts-cell"><span class="ts-days">10–15</span><span class="ts-label">Peer Review (days)</span></div>
+        <div class="ts-cell"><span class="ts-days">1–2</span><span class="ts-label">Decision Issued (days)</span></div>
+        <div class="ts-cell ts-total"><span class="ts-days">~18</span><span class="ts-label">Total Average (days)</span></div>
+      </div>
+    </div>
+
+    <!-- Review Overview -->
+    <div class="alert alert-info mb-24">
+      <span>ℹ️</span>
+      <span>All manuscripts undergo <strong>double-blind peer review</strong> — both authors and reviewers are anonymous to each other. Editorial decisions are made solely on scientific merit. IJITRA follows <a href="ethics.html" style="color:var(--blue-accent);font-weight:600;">COPE guidelines</a> throughout the process.</span>
+    </div>
+
+    <!-- Step-by-Step Flow -->
+    <div class="card mb-24">
+      <div class="section-header mt-0">
+        <h2>Step-by-Step Review Workflow</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="review-flow">
+
+        <div class="review-step">
+          <div class="review-step-connector">
+            <div class="review-step-num">1</div>
+            <div class="review-step-line"></div>
+          </div>
+          <div class="review-step-card">
+            <div class="review-step-header">
+              <div class="review-step-title">📨 Manuscript Submission</div>
+              <span class="review-step-duration">Day 0</span>
+            </div>
+            <div class="review-step-desc">Author submits the manuscript through the online submission system with cover letter, author information, and any supporting materials. An automated acknowledgement with a unique manuscript ID (e.g., IJITRA-2025-XXXX) is sent within 24 hours.</div>
+            <div class="review-step-details">
+              <span class="step-detail-pill">Online submission portal</span>
+              <span class="step-detail-pill">Automated acknowledgement</span>
+              <span class="step-detail-pill">Unique manuscript ID assigned</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-step">
+          <div class="review-step-connector">
+            <div class="review-step-num gold">2</div>
+            <div class="review-step-line"></div>
+          </div>
+          <div class="review-step-card">
+            <div class="review-step-header">
+              <div class="review-step-title">🔍 Editorial Desk Review</div>
+              <span class="review-step-duration">Days 1–5</span>
+            </div>
+            <div class="review-step-desc">The Managing Editor performs an initial quality check. Manuscripts are screened for: (a) scope alignment with IJITRA, (b) plagiarism using iThenticate (similarity ≤ 15%), (c) format compliance with author guidelines, and (d) completeness of all required sections. Manuscripts failing this check are desk-rejected with an explanation. Those passing proceed to peer review.</div>
+            <div class="review-step-details">
+              <span class="step-detail-pill gold">iThenticate plagiarism check</span>
+              <span class="step-detail-pill gold">Scope fit assessment</span>
+              <span class="step-detail-pill gold">Format compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-step">
+          <div class="review-step-connector">
+            <div class="review-step-num">3</div>
+            <div class="review-step-line"></div>
+          </div>
+          <div class="review-step-card">
+            <div class="review-step-header">
+              <div class="review-step-title">👥 Reviewer Invitation &amp; Assignment</div>
+              <span class="review-step-duration">Days 5–8</span>
+            </div>
+            <div class="review-step-desc">The Section Editor identifies at least two independent domain experts as reviewers, ensuring no conflicts of interest exist. Reviewers are invited and given 10–15 days to complete their review. Authors' names and affiliations are removed before manuscripts are sent to reviewers. If a reviewer declines, alternative reviewers are sought promptly.</div>
+            <div class="review-step-details">
+              <span class="step-detail-pill">Minimum 2 reviewers</span>
+              <span class="step-detail-pill">COI check performed</span>
+              <span class="step-detail-pill">Author identities blinded</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-step">
+          <div class="review-step-connector">
+            <div class="review-step-num purple">4</div>
+            <div class="review-step-line"></div>
+          </div>
+          <div class="review-step-card">
+            <div class="review-step-header">
+              <div class="review-step-title">🔬 Peer Review Evaluation</div>
+              <span class="review-step-duration">Days 8–23</span>
+            </div>
+            <div class="review-step-desc">Reviewers evaluate the manuscript using a structured form covering: originality, significance, methodological rigour, clarity of presentation, adequacy of references, and appropriateness of conclusions. They provide detailed written comments for the authors and a confidential recommendation for the editor. Late reviewers are sent reminders at days 10, 13, and 15.</div>
+            <div class="review-step-details">
+              <span class="step-detail-pill">Structured review form</span>
+              <span class="step-detail-pill">Confidential editor note</span>
+              <span class="step-detail-pill">Author-facing comments</span>
+              <span class="step-detail-pill">Automated reminders</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-step">
+          <div class="review-step-connector">
+            <div class="review-step-num gold">5</div>
+            <div class="review-step-line"></div>
+          </div>
+          <div class="review-step-card">
+            <div class="review-step-header">
+              <div class="review-step-title">⚖️ Editorial Decision</div>
+              <span class="review-step-duration">Days 23–25</span>
+            </div>
+            <div class="review-step-desc">Based on reviewer reports, the Section Editor makes a recommendation to the Editor-in-Chief, who issues the final decision. The decision letter includes the full reviewer comments (anonymised). In cases of conflicting reviewer recommendations, a third reviewer may be consulted or the Editor-in-Chief casts the deciding vote.</div>
+            <div class="review-step-details">
+              <span class="step-detail-pill gold">4 possible decisions</span>
+              <span class="step-detail-pill gold">Full reviewer comments shared</span>
+              <span class="step-detail-pill gold">EIC final authority</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-step">
+          <div class="review-step-connector">
+            <div class="review-step-num green">6</div>
+            <div class="review-step-line"></div>
+          </div>
+          <div class="review-step-card">
+            <div class="review-step-header">
+              <div class="review-step-title">✏️ Revision (if required)</div>
+              <span class="review-step-duration">+14 / +30 days</span>
+            </div>
+            <div class="review-step-desc">Authors are expected to address all reviewer comments in a point-by-point response letter. Minor revisions must be returned within 14 days; major revisions within 30 days. Revised manuscripts are typically re-reviewed by the same reviewers. Authors may request an extension with valid justification.</div>
+            <div class="review-step-details">
+              <span class="step-detail-pill green">Point-by-point response required</span>
+              <span class="step-detail-pill green">Tracked changes recommended</span>
+              <span class="step-detail-pill green">Same reviewers where possible</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-step">
+          <div class="review-step-connector">
+            <div class="review-step-num green">7</div>
+            <div class="review-step-line"></div>
+          </div>
+          <div class="review-step-card" style="border-left:3px solid var(--green);">
+            <div class="review-step-header">
+              <div class="review-step-title">🎉 Acceptance &amp; Production</div>
+              <span class="review-step-duration">+7 days to publish</span>
+            </div>
+            <div class="review-step-desc">Upon final acceptance, the manuscript enters production — copyediting, typesetting, author proofing, and galley correction. DOI is registered with CrossRef. The article is published online-first (with full citation details) within 7 days of payment receipt, and included in the next scheduled issue volume.</div>
+            <div class="review-step-details">
+              <span class="step-detail-pill green">DOI registered via CrossRef</span>
+              <span class="step-detail-pill green">Online-first publication</span>
+              <span class="step-detail-pill green">Author proofs sent</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Decision Types -->
+    <div class="card mb-24">
+      <div class="section-header mt-0">
+        <h2>Types of Editorial Decisions</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="decision-grid">
+
+        <div class="decision-card">
+          <div class="decision-card-top accept">
+            <span class="decision-icon">✅</span>
+            <span class="decision-label">Accept</span>
+            <span class="decision-pct">~10%</span>
+          </div>
+          <div class="decision-card-body">
+            The manuscript is accepted as submitted with no changes, or only very minor editorial adjustments (spelling, formatting). This is the most favourable outcome and rare on first submission.
+            <ul>
+              <li>APC invoice issued within 24 hours</li>
+              <li>Production begins on payment</li>
+              <li>Published online-first within 7 days</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="decision-card">
+          <div class="decision-card-top minor">
+            <span class="decision-icon">🔵</span>
+            <span class="decision-label">Minor Revision</span>
+            <span class="decision-pct">~20%</span>
+          </div>
+          <div class="decision-card-body">
+            The manuscript has merit but requires minor corrections — clarifications, additional references, figure adjustments, or language improvements that don't affect the scientific conclusions.
+            <ul>
+              <li>Revise and return within 14 days</li>
+              <li>Point-by-point response required</li>
+              <li>Re-review by Section Editor only</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="decision-card">
+          <div class="decision-card-top major">
+            <span class="decision-icon">🟡</span>
+            <span class="decision-label">Major Revision</span>
+            <span class="decision-pct">~42%</span>
+          </div>
+          <div class="decision-card-body">
+            Significant concerns need addressing — additional experiments, substantial rewriting, methodological clarifications, or new statistical analysis. The outcome after revision is not guaranteed acceptance.
+            <ul>
+              <li>Revise and return within 30 days</li>
+              <li>Full point-by-point response required</li>
+              <li>Re-reviewed by original reviewers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="decision-card">
+          <div class="decision-card-top reject">
+            <span class="decision-icon">❌</span>
+            <span class="decision-label">Reject</span>
+            <span class="decision-pct">~28%</span>
+          </div>
+          <div class="decision-card-body">
+            The manuscript has fundamental flaws — outside scope, inadequate methodology, fabricated data, insufficient novelty, or irresolvable issues that cannot be fixed through revision.
+            <ul>
+              <li>Full reviewer comments provided</li>
+              <li>No APC charged</li>
+              <li>Authors may appeal (see below)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Reviewer Criteria -->
+    <div class="card mb-24">
+      <div class="section-header mt-0">
+        <h2>Reviewer Evaluation Criteria</h2>
+        <div class="section-line"></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--text-mid);margin-bottom:16px;line-height:1.75;">Reviewers assess each manuscript on the following weighted criteria using a structured 1–5 scale. Authors can use this as a checklist when preparing their manuscripts.</p>
+      <table class="criteria-table">
+        <thead><tr><th>Criterion</th><th>Description</th><th>Weight</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Originality &amp; Novelty</strong></td>
+            <td>Does the paper make a significant new contribution? Is it sufficiently different from prior work?</td>
+            <td><div class="weight-bar-wrap"><div class="weight-bar" style="width:90px;"></div><span class="weight-label">30%</span></div></td>
+          </tr>
+          <tr>
+            <td><strong>Scientific Rigour</strong></td>
+            <td>Are the methods sound? Are claims supported by evidence? Is the experimental design appropriate?</td>
+            <td><div class="weight-bar-wrap"><div class="weight-bar" style="width:75px;"></div><span class="weight-label">25%</span></div></td>
+          </tr>
+          <tr>
+            <td><strong>Significance &amp; Impact</strong></td>
+            <td>Does the work advance the field? Will it be useful to researchers or practitioners?</td>
+            <td><div class="weight-bar-wrap"><div class="weight-bar" style="width:60px;"></div><span class="weight-label">20%</span></div></td>
+          </tr>
+          <tr>
+            <td><strong>Clarity &amp; Presentation</strong></td>
+            <td>Is the paper well-written, clearly structured, and easy to follow? Are figures and tables appropriate?</td>
+            <td><div class="weight-bar-wrap"><div class="weight-bar" style="width:45px;"></div><span class="weight-label">15%</span></div></td>
+          </tr>
+          <tr>
+            <td><strong>References &amp; Literature</strong></td>
+            <td>Is the literature review comprehensive and up-to-date? Are citations appropriate and complete?</td>
+            <td><div class="weight-bar-wrap"><div class="weight-bar" style="width:30px;"></div><span class="weight-label">10%</span></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Appeal -->
+    <div class="appeal-box mb-24">
+      <h3>⚖️ How to Appeal a Rejection</h3>
+      <p>Authors who believe a manuscript was rejected unfairly — due to misunderstanding, reviewer bias, or factual errors in the review — may submit a formal appeal within <strong>30 days</strong> of the decision. The appeal must include: (1) a point-by-point rebuttal of reviewer concerns, (2) supporting evidence or clarifications, and (3) a statement of why the decision should be reconsidered. Appeals are reviewed by the Editor-in-Chief with a different Associate Editor and decided within 21 days. The Editor-in-Chief's decision on appeals is final.</p>
+      <div style="margin-top:14px;">
+        <a href="mailto:editor@ijitra.com?subject=Appeal: Manuscript IJITRA-" class="btn-form-submit" style="display:inline-flex;font-size:13px;">📧 Submit an Appeal</a>
+      </div>
+    </div>
+
+    <!-- Manuscript Tracker -->
+    <div class="card mb-24">
+      <div class="section-header mt-0">
+        <h2>🔍 Check Manuscript Status</h2>
+        <div class="section-line"></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--text-mid);margin-bottom:16px;">Enter your manuscript ID to check the current stage of your submission in the review pipeline.</p>
+      <form id="trackerForm" style="display:flex;gap:8px;flex-wrap:wrap;">
+        <input type="text" class="form-control" placeholder="e.g. IJITRA-2025-1234" style="flex:1;min-width:200px;" required>
+        <button type="submit" class="btn-form-submit">Track Manuscript</button>
+      </form>
+      <div id="trackerResult"></div>
+    </div>
+
+    <!-- Become a Reviewer -->
+    <div class="card" style="background:linear-gradient(135deg,var(--cream) 0%,#f0f5ff 100%);border:1px solid #c5d6f0;">
+      <div class="section-header mt-0">
+        <h2>Become an IJITRA Reviewer</h2>
+        <div class="section-line"></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--text-mid);line-height:1.75;margin-bottom:16px;">
+        Peer reviewers are the backbone of scientific publishing. By reviewing for IJITRA, you contribute to maintaining high research standards, stay current with cutting-edge research, and receive an <strong>IJITRA Certificate of Review</strong> and a <strong>30% APC discount</strong> on your own submissions (after 3+ completed reviews).
+      </p>
+      <form id="quickReviewerForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Name &amp; Title <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="Dr. / Prof. Full Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Institutional Email <span class="required">*</span></label>
+            <input type="email" class="form-control" placeholder="you@university.edu" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Primary Expertise Area <span class="required">*</span></label>
+            <select class="form-control" required>
+              <option value="">— Select —</option>
+              <option>Artificial Intelligence / ML</option>
+              <option>Cybersecurity / Networks</option>
+              <option>IoT / Embedded Systems</option>
+              <option>Data Science</option>
+              <option>Cloud Computing</option>
+              <option>Blockchain</option>
+              <option>Computer Vision</option>
+              <option>Healthcare IT</option>
+              <option>Other (within scope)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Google Scholar / ORCID URL</label>
+            <input type="url" class="form-control" placeholder="https://scholar.google.com/…">
+          </div>
+        </div>
+        <button type="submit" class="btn-form-submit">✅ Apply as Reviewer</button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside>
+
+    <div class="sidebar-widget">
+      <div class="widget-header">📋 Quick Navigation</div>
+      <div class="widget-body">
+        <ul class="notice-list">
+          <li><span class="notice-bullet">▸</span><a href="#top">Overview &amp; Timeline</a></li>
+          <li><span class="notice-bullet">▸</span><a href="submit.html">Submit Manuscript</a></li>
+          <li><span class="notice-bullet">▸</span><a href="submit.html#track">Track Submission</a></li>
+          <li><span class="notice-bullet">▸</span><a href="guidelines.html">Author Guidelines</a></li>
+          <li><span class="notice-bullet">▸</span><a href="ethics.html">Publication Ethics</a></li>
+          <li><span class="notice-bullet">▸</span><a href="apc.html">APC / Charges</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar-widget">
+      <div class="widget-header">⏱️ Timeline Summary</div>
+      <div class="widget-body">
+        <div class="metric-row"><span>Submission acknowledgement</span><span class="metric-val">24 hrs</span></div>
+        <div class="metric-row"><span>Desk review</span><span class="metric-val">3–5 days</span></div>
+        <div class="metric-row"><span>Reviewer assignment</span><span class="metric-val">2–3 days</span></div>
+        <div class="metric-row"><span>Peer review</span><span class="metric-val">10–15 days</span></div>
+        <div class="metric-row"><span>Decision issued</span><span class="metric-val">1–2 days</span></div>
+        <div class="metric-row"><span><strong>Total (average)</strong></span><span class="metric-val" style="color:var(--gold);font-weight:700;">~18 days</span></div>
+        <div class="metric-row"><span>Production (after APC)</span><span class="metric-val">7 days</span></div>
+      </div>
+    </div>
+
+    <div class="sidebar-widget">
+      <div class="widget-header">📊 Review Statistics</div>
+      <div class="widget-body">
+        <div class="metric-row"><span>Manuscripts reviewed (2024)</span><span class="metric-val">1,240</span></div>
+        <div class="metric-row"><span>Acceptance rate</span><span class="metric-val">~28%</span></div>
+        <div class="metric-row"><span>Active reviewers</span><span class="metric-val">180+</span></div>
+        <div class="metric-row"><span>Reviewer countries</span><span class="metric-val">42</span></div>
+        <div class="metric-row"><span>Avg. review quality score</span><span class="metric-val">4.3 / 5</span></div>
+      </div>
+    </div>
+
+    <div class="sidebar-widget">
+      <div class="widget-header">🏅 Reviewer Benefits</div>
+      <div class="widget-body">
+        <ul class="notice-list">
+          <li><span class="notice-bullet">✓</span>Certificate of Review (each review)</li>
+          <li><span class="notice-bullet">✓</span>30% APC discount (3+ reviews)</li>
+          <li><span class="notice-bullet">✓</span>Acknowledged in annual report</li>
+          <li><span class="notice-bullet">✓</span>Stay current with research</li>
+          <li><span class="notice-bullet">✓</span>Listed in reviewer database</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar-widget">
+      <div class="widget-header">⚖️ Appeals Policy</div>
+      <div class="widget-body">
+        <div class="metric-row"><span>Appeal window</span><span class="metric-val">30 days</span></div>
+        <div class="metric-row"><span>Appeal review time</span><span class="metric-val">21 days</span></div>
+        <div class="metric-row"><span>Appeals upheld (2024)</span><span class="metric-val">8%</span></div>
+        <a href="mailto:editor@ijitra.com?subject=Appeal" style="font-size:12px;color:var(--blue-accent);font-weight:600;display:block;margin-top:10px;">Submit an Appeal →</a>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <div class="f-abbr">
+          <div style="background:linear-gradient(135deg,#c8961e,#e8b84b);color:#0a1628;width:34px;height:34px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:13px;flex-shrink:0;">IJ</div>
+          IJITRA
+        </div>
+        <p>International Journal of Innovative Technology, Innovation and Research Applications is a peer-reviewed, open-access multidisciplinary journal publishing original research in technology and engineering sciences. Published quarterly since 2022.</p>
+        <div class="footer-contact">
+          <span>📧 <a href="mailto:editor@ijitra.com">editor@ijitra.com</a></span>
+          <span>📞 +91-11-XXXX-XXXX</span>
+          <span>🏢 Publication Office, New Delhi – 110001, India</span>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn s-fb">Facebook</a>
+          <a href="#" class="social-btn s-li">LinkedIn</a>
+          <a href="#" class="social-btn s-tw">Twitter</a>
+          <a href="#" class="social-btn s-yt">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Journal</h4>
+        <ul>
+          <li><a href="about.html">About IJITRA</a></li>
+          <li><a href="editorial-board.html">Editorial Board</a></li>
+          <li><a href="ethics.html">Peer Review Policy</a></li>
+          <li><a href="ethics.html">Publication Ethics</a></li>
+          <li><a href="about.html">Open Access Policy</a></li>
+          <li><a href="ethics.html">Plagiarism Policy</a></li>
+          <li><a href="ethics.html">Retraction Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Authors</h4>
+        <ul>
+          <li><a href="guidelines.html">Author Guidelines</a></li>
+          <li><a href="submit.html">Submit Manuscript</a></li>
+          <li><a href="submit.html">Track Submission</a></li>
+          <li><a href="guidelines.html">Article Template</a></li>
+          <li><a href="apc.html">APC Information</a></li>
+          <li><a href="review-process.html">Review Process</a></li>
+          <li><a href="contact.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="current-issue.html">Current Issue</a></li>
+          <li><a href="archives.html">All Archives</a></li>
+          <li><a href="special-issues.html">Special Issues</a></li>
+          <li><a href="archives.html">Most Cited</a></li>
+          <li><a href="archives.html">Most Downloaded</a></li>
+          <li><a href="indexing.html">Indexing</a></li>
+          <li><a href="contact.html">Announcements</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2025 IJITRA — All rights reserved.</div>
+    <div class="footer-bottom-right">
+      <span class="cc-badge">CC BY 4.0</span>
+      <a href="ethics.html">Privacy Policy</a>
+      <a href="ethics.html">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/review-process.js"></script>
+</body>
+</html>

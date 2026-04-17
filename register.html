@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account — IJITRA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="issn-badge">ISSN: 2584-8119 (Online)</span>
+      <span class="topbar-divider">|</span>
+      <span>Peer-Reviewed &nbsp;·&nbsp; Open Access &nbsp;·&nbsp; DOI: 10.12345/ijitra</span>
+    </div>
+    <div class="topbar-right">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-brand-row">
+    <div class="journal-logo">
+      <div class="logo-abbr">IJ</div>
+      <div class="logo-sub">ITRA</div>
+    </div>
+    <div class="journal-title-block">
+      <div class="journal-abbr-name"><span>IJITRA</span></div>
+      <div class="journal-full-name">International Journal of Innovative Technology, Innovation and Research Applications</div>
+    </div>
+    <div class="header-actions">
+      <a href="submit.html" class="btn-submit">✦ Submit Manuscript</a>
+      <div class="header-metrics">
+        <span><span class="metric-dot"></span> Impact Factor: 6.142</span>
+        <span><span class="metric-dot"></span> H-Index: 14</span>
+        <span><span class="metric-dot"></span> CiteScore: 4.8</span>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <a href="about.html" class="nav-link">About <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">About IJITRA</a>
+          <a href="editorial-board.html">Editorial Board</a>
+          <a href="ethics.html">Ethics &amp; Policy</a>
+          <a href="indexing.html">Indexing</a>
+        </div>
+      </div>
+      <a href="editorial-board.html" class="nav-link">Editorial Board</a>
+      <div class="nav-item">
+        <a href="current-issue.html" class="nav-link">Issues <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="current-issue.html">Current Issue</a>
+          <a href="archives.html">Archives</a>
+          <a href="special-issues.html">Special Issues</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="guidelines.html" class="nav-link">For Authors <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="guidelines.html">Author Guidelines</a>
+          <a href="submit.html">Submit Manuscript</a>
+          <a href="review-process.html">Review Process</a>
+          <a href="apc.html">APC / Charges</a>
+        </div>
+      </div>
+      <a href="indexing.html" class="nav-link">Indexing</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="nav-search-wrap">
+        <input id="searchInput" class="nav-search-input" type="text" placeholder="Search articles…">
+        <button id="searchBtn" class="nav-search-btn">Search</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="auth-wrapper" style="padding:32px 20px;">
+  <div class="auth-card" style="max-width:560px;">
+    <div class="auth-card-header">
+      <div class="auth-logo">
+        <div class="auth-logo-abbr">IJ</div>
+        <div class="auth-logo-sub">ITRA</div>
+      </div>
+      <h2>Create Your Account</h2>
+      <p>Join 12,000+ researchers worldwide on IJITRA</p>
+    </div>
+    <div class="auth-card-body">
+      <button class="btn-social"><span class="s-icon">🔵</span> Register with Google</button>
+      <button class="btn-social"><span class="s-icon">⬛</span> Register with ORCID</button>
+      <div class="auth-divider">or create account with email</div>
+      <form id="registerForm" autocomplete="off">
+        <p style="font-size:12.5px;font-weight:700;color:var(--text-mid);margin-bottom:10px;">I am registering as:</p>
+        <div class="role-selector">
+          <div class="role-option">
+            <input type="radio" name="role" id="role-author" value="author" checked>
+            <label class="role-label" for="role-author"><span class="role-icon">✍️</span>Author</label>
+          </div>
+          <div class="role-option">
+            <input type="radio" name="role" id="role-reviewer" value="reviewer">
+            <label class="role-label" for="role-reviewer"><span class="role-icon">🔬</span>Reviewer</label>
+          </div>
+          <div class="role-option">
+            <input type="radio" name="role" id="role-reader" value="reader">
+            <label class="role-label" for="role-reader"><span class="role-icon">📖</span>Reader</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="Last name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Institutional Email <span class="required">*</span></label>
+          <input type="email" class="form-control" placeholder="you@university.edu" required>
+          <div class="form-hint">Use your institutional/university email for faster verification.</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Institution / Organization <span class="required">*</span></label>
+          <input type="text" class="form-control" placeholder="University or research institution" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Country <span class="required">*</span></label>
+            <select class="form-control" required>
+              <option value="">— Select —</option>
+              <option>India</option><option>United States</option><option>United Kingdom</option>
+              <option>China</option><option>Germany</option><option>Australia</option>
+              <option>Canada</option><option>Singapore</option><option>Japan</option>
+              <option>Saudi Arabia</option><option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Designation</label>
+            <select class="form-control">
+              <option value="">— Select —</option>
+              <option>Professor</option><option>Associate Professor</option>
+              <option>Assistant Professor</option><option>Research Scholar (PhD)</option>
+              <option>Postdoctoral Researcher</option><option>Industry Professional</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password <span class="required">*</span></label>
+          <div class="password-wrap">
+            <input type="password" id="regPw" class="form-control" placeholder="Create a strong password" required minlength="8">
+            <button type="button" class="password-toggle" id="regPwToggle">👁️</button>
+          </div>
+          <div class="strength-bar"><div class="strength-fill" id="strengthFill"></div></div>
+          <div class="strength-text" id="strengthText"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Confirm Password <span class="required">*</span></label>
+          <input type="password" id="regPwConf" class="form-control" placeholder="Repeat your password" required>
+        </div>
+        <div class="form-group">
+          <label style="display:flex;gap:8px;font-size:13px;cursor:pointer;align-items:flex-start;">
+            <input type="checkbox" required style="accent-color:var(--blue-accent);width:14px;height:14px;margin-top:2px;flex-shrink:0;">
+            I agree to IJITRA's <a href="ethics.html" style="color:var(--blue-accent);">Terms of Use</a> and <a href="ethics.html" style="color:var(--blue-accent);">Privacy Policy</a>, and consent to receiving journal communications.
+          </label>
+        </div>
+        <button type="submit" class="btn-auth">Create Account</button>
+      </form>
+      <div class="auth-link">Already have an account? <a href="login.html">Sign in →</a></div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <div class="f-abbr">
+          <div style="background:linear-gradient(135deg,#c8961e,#e8b84b);color:#0a1628;width:34px;height:34px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:13px;flex-shrink:0;">IJ</div>
+          IJITRA
+        </div>
+        <p>International Journal of Innovative Technology, Innovation and Research Applications is a peer-reviewed, open-access multidisciplinary journal publishing original research in technology and engineering sciences. Published quarterly since 2022.</p>
+        <div class="footer-contact">
+          <span>📧 <a href="mailto:editor@ijitra.com">editor@ijitra.com</a></span>
+          <span>📞 +91-11-XXXX-XXXX</span>
+          <span>🏢 Publication Office, New Delhi – 110001, India</span>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn s-fb">Facebook</a>
+          <a href="#" class="social-btn s-li">LinkedIn</a>
+          <a href="#" class="social-btn s-tw">Twitter</a>
+          <a href="#" class="social-btn s-yt">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Journal</h4>
+        <ul>
+          <li><a href="about.html">About IJITRA</a></li>
+          <li><a href="editorial-board.html">Editorial Board</a></li>
+          <li><a href="ethics.html">Peer Review Policy</a></li>
+          <li><a href="ethics.html">Publication Ethics</a></li>
+          <li><a href="about.html">Open Access Policy</a></li>
+          <li><a href="ethics.html">Plagiarism Policy</a></li>
+          <li><a href="ethics.html">Retraction Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Authors</h4>
+        <ul>
+          <li><a href="guidelines.html">Author Guidelines</a></li>
+          <li><a href="submit.html">Submit Manuscript</a></li>
+          <li><a href="submit.html">Track Submission</a></li>
+          <li><a href="guidelines.html">Article Template</a></li>
+          <li><a href="apc.html">APC Information</a></li>
+          <li><a href="review-process.html">Review Process</a></li>
+          <li><a href="contact.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="current-issue.html">Current Issue</a></li>
+          <li><a href="archives.html">All Archives</a></li>
+          <li><a href="special-issues.html">Special Issues</a></li>
+          <li><a href="archives.html">Most Cited</a></li>
+          <li><a href="archives.html">Most Downloaded</a></li>
+          <li><a href="indexing.html">Indexing</a></li>
+          <li><a href="contact.html">Announcements</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2025 IJITRA — All rights reserved.</div>
+    <div class="footer-bottom-right">
+      <span class="cc-badge">CC BY 4.0</span>
+      <a href="ethics.html">Privacy Policy</a>
+      <a href="ethics.html">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

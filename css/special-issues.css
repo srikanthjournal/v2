@@ -1,0 +1,158 @@
+/* ================================================================
+   special-issues.css — Special Issues Page Styles
+   IJITRA Journal Website
+   ================================================================ */
+
+/* ── SPECIAL ISSUE HERO CARD ─────────────────────────────────────── */
+.si-hero-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  position: relative;
+}
+.si-hero-header {
+  background: linear-gradient(135deg, var(--navy) 0%, #1a3d7c 50%, #2457b3 100%);
+  padding: 32px 28px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.si-hero-header::before {
+  content: '';
+  position: absolute; top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(200,150,30,0.2) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.si-status-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(200,150,30,0.2); border: 1px solid rgba(200,150,30,0.5);
+  color: var(--gold-light); font-size: 11px; font-weight: 700;
+  padding: 4px 12px; border-radius: 2px; letter-spacing: 1px;
+  text-transform: uppercase; margin-bottom: 14px;
+}
+.si-status-dot {
+  width: 6px; height: 6px; background: var(--gold-light);
+  border-radius: 50%; animation: pulse-dot 1.5s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+.si-hero-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 26px; font-weight: 600; color: white;
+  line-height: 1.3; margin-bottom: 10px;
+}
+.si-guest-editors {
+  font-size: 13px; color: #a8c0df; margin-bottom: 16px;
+}
+.si-hero-meta {
+  display: flex; gap: 20px; flex-wrap: wrap;
+}
+.si-meta-item {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 12.5px; color: rgba(255,255,255,0.75);
+}
+.si-meta-item strong { color: var(--gold-light); }
+.si-hero-body {
+  background: white; padding: 22px 28px;
+}
+.si-hero-desc { font-size: 13.5px; color: var(--text-mid); line-height: 1.8; margin-bottom: 16px; }
+.si-scope-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
+.si-scope-tags .tag {
+  background: #e8f0fb; color: var(--blue-accent);
+  font-size: 11px; font-weight: 600; padding: 4px 11px; border-radius: 12px;
+}
+.si-hero-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ── ISSUE CARDS GRID ────────────────────────────────────────────── */
+.si-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.si-card {
+  background: white; border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  transition: var(--transition);
+}
+.si-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.si-card-accent {
+  height: 5px;
+  background: linear-gradient(90deg, var(--blue-accent), var(--blue-light));
+}
+.si-card-accent.gold {
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+}
+.si-card-accent.purple {
+  background: linear-gradient(90deg, #7b2d9e, #a05cc9);
+}
+.si-card-accent.green {
+  background: linear-gradient(90deg, var(--green), #4caf50);
+}
+.si-card-body { padding: 18px 20px; }
+.si-card-status {
+  font-size: 10px; font-weight: 800; padding: 3px 9px; border-radius: 2px;
+  text-transform: uppercase; letter-spacing: 0.5px; display: inline-block; margin-bottom: 10px;
+}
+.si-card-status.open     { background: #e8f8e8; color: var(--green); }
+.si-card-status.upcoming { background: #fff8e1; color: #b8620e; }
+.si-card-status.closed   { background: var(--cream-dark); color: var(--text-light); }
+.si-card-title {
+  font-family: 'EB Garamond', serif; font-size: 17px; font-weight: 600;
+  color: var(--navy); margin-bottom: 8px; line-height: 1.3;
+}
+.si-card-editors { font-size: 12px; color: var(--text-light); margin-bottom: 10px; }
+.si-card-desc { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 12px; }
+.si-card-meta {
+  display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 14px;
+}
+.si-card-meta span { font-size: 11.5px; color: var(--text-light); display: flex; align-items: center; gap: 4px; }
+.si-card-meta strong { color: var(--text-mid); }
+.si-card-actions { display: flex; gap: 8px; }
+
+/* ── PROPOSAL FORM ───────────────────────────────────────────────── */
+.proposal-card {
+  background: linear-gradient(135deg, var(--navy) 0%, #1a3060 100%);
+  border-radius: var(--radius); padding: 28px; color: white;
+  margin-top: 24px;
+}
+.proposal-card h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 22px; color: white; margin-bottom: 8px;
+}
+.proposal-card p { font-size: 13.5px; color: #a8c0df; line-height: 1.7; margin-bottom: 20px; }
+.proposal-card .form-control {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.2);
+  color: white;
+}
+.proposal-card .form-control::placeholder { color: rgba(255,255,255,0.45); }
+.proposal-card .form-control:focus {
+  border-color: var(--gold); background: rgba(255,255,255,0.15);
+  box-shadow: 0 0 0 3px rgba(200,150,30,0.2);
+}
+.proposal-card .form-label { color: rgba(255,255,255,0.85); }
+
+/* ── STATS ROW ───────────────────────────────────────────────────── */
+.si-stats-row {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 14px; margin-bottom: 24px;
+}
+.si-stat-box {
+  background: white; border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px; text-align: center;
+}
+.si-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px; font-weight: 700; color: var(--navy); display: block;
+}
+.si-stat-label { font-size: 11.5px; color: var(--text-light); margin-top: 3px; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────── */
+@media (max-width: 760px) {
+  .si-grid { grid-template-columns: 1fr; }
+  .si-stats-row { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 500px) {
+  .si-stats-row { grid-template-columns: 1fr; }
+}

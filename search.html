@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Results — IJITRA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="issn-badge">ISSN: 2584-8119 (Online)</span>
+      <span class="topbar-divider">|</span>
+      <span>Peer-Reviewed &nbsp;·&nbsp; Open Access &nbsp;·&nbsp; DOI: 10.12345/ijitra</span>
+    </div>
+    <div class="topbar-right">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-brand-row">
+    <div class="journal-logo">
+      <div class="logo-abbr">IJ</div>
+      <div class="logo-sub">ITRA</div>
+    </div>
+    <div class="journal-title-block">
+      <div class="journal-abbr-name"><span>IJITRA</span></div>
+      <div class="journal-full-name">International Journal of Innovative Technology, Innovation and Research Applications</div>
+    </div>
+    <div class="header-actions">
+      <a href="submit.html" class="btn-submit">✦ Submit Manuscript</a>
+      <div class="header-metrics">
+        <span><span class="metric-dot"></span> Impact Factor: 6.142</span>
+        <span><span class="metric-dot"></span> H-Index: 14</span>
+        <span><span class="metric-dot"></span> CiteScore: 4.8</span>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <a href="about.html" class="nav-link">About <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">About IJITRA</a>
+          <a href="editorial-board.html">Editorial Board</a>
+          <a href="ethics.html">Ethics &amp; Policy</a>
+          <a href="indexing.html">Indexing</a>
+        </div>
+      </div>
+      <a href="editorial-board.html" class="nav-link">Editorial Board</a>
+      <div class="nav-item">
+        <a href="current-issue.html" class="nav-link">Issues <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="current-issue.html">Current Issue</a>
+          <a href="archives.html">Archives</a>
+          <a href="special-issues.html">Special Issues</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="guidelines.html" class="nav-link">For Authors <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="guidelines.html">Author Guidelines</a>
+          <a href="submit.html">Submit Manuscript</a>
+          <a href="review-process.html">Review Process</a>
+          <a href="apc.html">APC / Charges</a>
+        </div>
+      </div>
+      <a href="indexing.html" class="nav-link">Indexing</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="nav-search-wrap">
+        <input id="searchInput" class="nav-search-input" type="text" placeholder="Search articles…">
+        <button id="searchBtn" class="nav-search-btn">Search</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="search-hero">
+  <div class="search-hero-inner">
+    <h1 id="resultHeading">Search Results for <span class="search-query-fill"></span></h1>
+    <div class="search-bar-large">
+      <input id="newSearchInput" class="search-query-fill" type="text" placeholder="Search articles, authors, keywords…">
+      <button id="newSearchBtn">🔍 Search</button>
+    </div>
+    <div class="search-filters">
+      <span class="filter-chip active" data-filter="all">All Results</span>
+      <span class="filter-chip" data-filter="article">Research Articles</span>
+      <span class="filter-chip" data-filter="review">Reviews</span>
+      <span class="filter-chip" data-filter="case">Case Studies</span>
+      <span class="filter-chip" data-filter="2025">Year: 2025</span>
+      <span class="filter-chip" data-filter="2024">Year: 2024</span>
+      <span class="filter-chip" data-filter="ai">AI &amp; ML</span>
+      <span class="filter-chip" data-filter="iot">IoT</span>
+    </div>
+  </div>
+</div>
+
+<div class="main-wrapper">
+  <main>
+    <div class="search-meta">
+      <span>Showing <strong>1–8</strong> of <strong>42 results</strong> — sorted by relevance</span>
+      <select id="sortSelect" class="sort-select">
+        <option>Sort by: Relevance</option>
+        <option>Sort by: Date (Newest)</option>
+        <option>Sort by: Date (Oldest)</option>
+        <option>Sort by: Most Cited</option>
+        <option>Sort by: Most Downloaded</option>
+      </select>
+    </div>
+
+    <div class="article-card">
+      <div class="article-meta">
+        <span class="badge badge-research">Research Article</span>
+        <span class="badge badge-vol">Vol. 3, No. 2 · 2025</span>
+        <span class="badge badge-oa">🔓 Open Access</span>
+      </div>
+      <div class="article-title"><a href="article.html">Deep Learning-Based <mark class="search-highlight">Intrusion Detection</mark> System for IoT Networks: A Comparative Study of CNN and LSTM Architectures</a></div>
+      <div class="article-authors"><strong>Priya Sharma</strong>, Rajesh Kumar Gupta, Ananya Singh — <em>IIT Delhi, India</em></div>
+      <div class="article-abstract">A comparative analysis of CNN and LSTM architectures for <mark class="search-highlight">intrusion detection</mark> in IoT environments achieving 98.7% detection accuracy with low computational overhead suitable for resource-constrained IoT devices.</div>
+      <div class="article-keywords"><span class="kw-tag">IoT Security</span><span class="kw-tag">Deep Learning</span><span class="kw-tag">CNN</span><span class="kw-tag">LSTM</span></div>
+      <div class="article-actions"><a href="article.html" class="btn-pdf">📄 PDF</a><a href="article.html" class="btn-ghost">Abstract</a><a href="article.html" class="btn-ghost">Cite</a><div class="article-doi">DOI: <a href="#">10.12345/ijitra.2025.3.2.001</a></div></div>
+    </div>
+
+    <div class="article-card">
+      <div class="article-meta"><span class="badge badge-review">Review Article</span><span class="badge badge-vol">Vol. 2, No. 5 · 2024</span><span class="badge badge-oa">🔓 Open Access</span></div>
+      <div class="article-title"><a href="article.html">A Survey on <mark class="search-highlight">Transformer</mark> Models for Natural Language Processing: Architectures, Applications, and Future Directions</a></div>
+      <div class="article-authors"><strong>Arjun Pillai</strong>, Meera Krishnamurthy — <em>IISc Bengaluru, India</em></div>
+      <div class="article-abstract">Comprehensive survey of transformer architectures including BERT, GPT, T5, and LLaMA across 120 NLP studies, with benchmark comparisons and an analysis of parameter-efficient fine-tuning methods.</div>
+      <div class="article-keywords"><span class="kw-tag">Transformers</span><span class="kw-tag">NLP</span><span class="kw-tag">BERT</span><span class="kw-tag">GPT</span><span class="kw-tag">LLM</span></div>
+      <div class="article-actions"><a href="article.html" class="btn-pdf">📄 PDF</a><a href="article.html" class="btn-ghost">Abstract</a><div class="article-doi">DOI: <a href="#">10.12345/ijitra.2024.2.5.003</a></div></div>
+    </div>
+
+    <div class="article-card">
+      <div class="article-meta"><span class="badge badge-research">Research Article</span><span class="badge badge-vol">Vol. 3, No. 1 · 2025</span><span class="badge badge-oa">🔓 Open Access</span></div>
+      <div class="article-title"><a href="article.html">Federated <mark class="search-highlight">Learning</mark> for Privacy-Preserving Anomaly Detection in Industrial IoT Networks</a></div>
+      <div class="article-authors"><strong>Mohammed Al-Hassan</strong>, Chen Wei — <em>KAUST, Saudi Arabia; Peking University, China</em></div>
+      <div class="article-abstract">A novel federated learning framework combining differential privacy with secure aggregation reduces IIoT anomaly detection latency by 67% while maintaining 96.2% accuracy across distributed edge nodes.</div>
+      <div class="article-keywords"><span class="kw-tag">Federated Learning</span><span class="kw-tag">IIoT</span><span class="kw-tag">Anomaly Detection</span><span class="kw-tag">Edge Computing</span></div>
+      <div class="article-actions"><a href="article.html" class="btn-pdf">📄 PDF</a><a href="article.html" class="btn-ghost">Abstract</a><div class="article-doi">DOI: <a href="#">10.12345/ijitra.2025.3.1.007</a></div></div>
+    </div>
+
+    <div class="article-card">
+      <div class="article-meta"><span class="badge badge-case">Case Study</span><span class="badge badge-vol">Vol. 2, No. 3 · 2024</span><span class="badge badge-oa">🔓 Open Access</span></div>
+      <div class="article-title"><a href="article.html">Blockchain-Based Smart Contract Deployment for Automated Insurance Claims Processing: A FinTech Case Study</a></div>
+      <div class="article-authors"><strong>Aditi Verma</strong>, Paulo Ferreira — <em>BITS Pilani, India; University of Lisbon, Portugal</em></div>
+      <div class="article-abstract">Real-world deployment of Ethereum smart contracts in an Indian insurance company reduced claim processing time from 14 days to 4 hours, with 99.97% transaction accuracy across 18 months of operation.</div>
+      <div class="article-keywords"><span class="kw-tag">Blockchain</span><span class="kw-tag">Smart Contracts</span><span class="kw-tag">FinTech</span><span class="kw-tag">Ethereum</span></div>
+      <div class="article-actions"><a href="article.html" class="btn-pdf">📄 PDF</a><a href="article.html" class="btn-ghost">Abstract</a><div class="article-doi">DOI: <a href="#">10.12345/ijitra.2024.2.3.005</a></div></div>
+    </div>
+
+    <div class="article-card">
+      <div class="article-meta"><span class="badge badge-research">Research Article</span><span class="badge badge-vol">Vol. 2, No. 6 · 2024</span><span class="badge badge-oa">🔓 Open Access</span></div>
+      <div class="article-title"><a href="article.html">Quantum-Enhanced Cryptographic Key Distribution Protocol for Secure 6G Backhaul Communications</a></div>
+      <div class="article-authors"><strong>Vikram Singh</strong>, Neha Patel — <em>TIFR Mumbai, India</em></div>
+      <div class="article-abstract">A lattice-based post-quantum key encapsulation mechanism integrated into 6G mmWave backhaul links achieves cryptographic security against quantum adversaries with &lt;0.3ms additional latency overhead.</div>
+      <div class="article-keywords"><span class="kw-tag">Quantum Cryptography</span><span class="kw-tag">6G</span><span class="kw-tag">Post-Quantum</span><span class="kw-tag">Backhaul</span></div>
+      <div class="article-actions"><a href="article.html" class="btn-pdf">📄 PDF</a><a href="article.html" class="btn-ghost">Abstract</a><div class="article-doi">DOI: <a href="#">10.12345/ijitra.2024.2.6.002</a></div></div>
+    </div>
+
+    <div class="pagination">
+      <button class="page-btn disabled">‹</button>
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">4</button>
+      <button class="page-btn">5</button>
+      <button class="page-btn">›</button>
+    </div>
+  </main>
+
+  <aside>
+    <div class="sidebar-widget">
+      <div class="widget-header">🔧 Refine Results</div>
+      <div class="widget-body">
+        <div style="margin-bottom:14px;">
+          <div style="font-size:12px;font-weight:700;color:var(--text-mid);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Article Type</div>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" checked style="accent-color:var(--blue-accent);"> Research Articles (28)</label>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" checked style="accent-color:var(--blue-accent);"> Review Articles (9)</label>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" checked style="accent-color:var(--blue-accent);"> Case Studies (5)</label>
+        </div>
+        <div class="divider"></div>
+        <div style="margin-bottom:14px;">
+          <div style="font-size:12px;font-weight:700;color:var(--text-mid);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Year</div>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" checked style="accent-color:var(--blue-accent);"> 2025 (22)</label>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" checked style="accent-color:var(--blue-accent);"> 2024 (14)</label>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" style="accent-color:var(--blue-accent);"> 2023 (6)</label>
+        </div>
+        <div class="divider"></div>
+        <div>
+          <div style="font-size:12px;font-weight:700;color:var(--text-mid);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Subject Area</div>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" checked style="accent-color:var(--blue-accent);"> AI &amp; Machine Learning</label>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" style="accent-color:var(--blue-accent);"> Cybersecurity</label>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" style="accent-color:var(--blue-accent);"> IoT &amp; Embedded</label>
+          <label style="display:flex;gap:7px;font-size:13px;margin-bottom:6px;cursor:pointer;"><input type="checkbox" style="accent-color:var(--blue-accent);"> Blockchain</label>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="widget-header">📌 Related Searches</div>
+      <div class="widget-body">
+        <ul class="notice-list">
+          <li><span class="notice-bullet">▸</span><a href="search.html?q=deep+learning">Deep Learning</a></li>
+          <li><span class="notice-bullet">▸</span><a href="search.html?q=federated+learning">Federated Learning</a></li>
+          <li><span class="notice-bullet">▸</span><a href="search.html?q=IoT+security">IoT Security</a></li>
+          <li><span class="notice-bullet">▸</span><a href="search.html?q=blockchain">Blockchain</a></li>
+          <li><span class="notice-bullet">▸</span><a href="search.html?q=transformer">Transformer Models</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <div class="f-abbr">
+          <div style="background:linear-gradient(135deg,#c8961e,#e8b84b);color:#0a1628;width:34px;height:34px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:13px;flex-shrink:0;">IJ</div>
+          IJITRA
+        </div>
+        <p>International Journal of Innovative Technology, Innovation and Research Applications is a peer-reviewed, open-access multidisciplinary journal publishing original research in technology and engineering sciences. Published quarterly since 2022.</p>
+        <div class="footer-contact">
+          <span>📧 <a href="mailto:editor@ijitra.com">editor@ijitra.com</a></span>
+          <span>📞 +91-11-XXXX-XXXX</span>
+          <span>🏢 Publication Office, New Delhi – 110001, India</span>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn s-fb">Facebook</a>
+          <a href="#" class="social-btn s-li">LinkedIn</a>
+          <a href="#" class="social-btn s-tw">Twitter</a>
+          <a href="#" class="social-btn s-yt">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Journal</h4>
+        <ul>
+          <li><a href="about.html">About IJITRA</a></li>
+          <li><a href="editorial-board.html">Editorial Board</a></li>
+          <li><a href="ethics.html">Peer Review Policy</a></li>
+          <li><a href="ethics.html">Publication Ethics</a></li>
+          <li><a href="about.html">Open Access Policy</a></li>
+          <li><a href="ethics.html">Plagiarism Policy</a></li>
+          <li><a href="ethics.html">Retraction Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Authors</h4>
+        <ul>
+          <li><a href="guidelines.html">Author Guidelines</a></li>
+          <li><a href="submit.html">Submit Manuscript</a></li>
+          <li><a href="submit.html">Track Submission</a></li>
+          <li><a href="guidelines.html">Article Template</a></li>
+          <li><a href="apc.html">APC Information</a></li>
+          <li><a href="review-process.html">Review Process</a></li>
+          <li><a href="contact.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="current-issue.html">Current Issue</a></li>
+          <li><a href="archives.html">All Archives</a></li>
+          <li><a href="special-issues.html">Special Issues</a></li>
+          <li><a href="archives.html">Most Cited</a></li>
+          <li><a href="archives.html">Most Downloaded</a></li>
+          <li><a href="indexing.html">Indexing</a></li>
+          <li><a href="contact.html">Announcements</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2025 IJITRA — All rights reserved.</div>
+    <div class="footer-bottom-right">
+      <span class="cc-badge">CC BY 4.0</span>
+      <a href="ethics.html">Privacy Policy</a>
+      <a href="ethics.html">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

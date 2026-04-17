@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<title>Submit Manuscript — IJITRA</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.submit-steps { display:grid; grid-template-columns:repeat(5,1fr); gap:0; margin-bottom:28px; }
+.submit-step { text-align:center; padding:14px 8px; background:var(--cream); border:1px solid var(--border); border-right:none; position:relative; }
+.submit-step:last-child { border-right:1px solid var(--border); }
+.submit-step.active { background:var(--blue-accent); border-color:var(--blue-accent); }
+.submit-step.active .ss-num { background:white; color:var(--blue-accent); }
+.submit-step.active .ss-label { color:white; }
+.submit-step.done { background:var(--green); border-color:var(--green); }
+.submit-step.done .ss-num { background:white; color:var(--green); }
+.submit-step.done .ss-label { color:white; }
+.ss-num { width:28px; height:28px; border-radius:50%; background:var(--navy); color:white; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center; margin:0 auto 7px; }
+.ss-label { font-size:11px; font-weight:600; color:var(--text-mid); }
+.submit-step::after { content:'›'; position:absolute; right:-12px; top:50%; transform:translateY(-50%); color:var(--border-dark); font-size:20px; z-index:1; }
+.submit-step:last-child::after { display:none; }
+.upload-zone { border:2px dashed var(--border); border-radius:var(--radius); padding:32px; text-align:center; background:var(--cream); cursor:pointer; transition:var(--transition); }
+.upload-zone:hover { border-color:var(--blue-accent); background:#f0f5ff; }
+.upload-zone.dragover { border-color:var(--blue-accent); background:#e8f0ff; }
+.upload-icon { font-size:36px; margin-bottom:10px; }
+.upload-zone p { font-size:13px; color:var(--text-light); }
+.upload-zone strong { color:var(--blue-accent); }
+.checkbox-group { display:flex; flex-direction:column; gap:10px; }
+.checkbox-item { display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--text-mid); }
+.checkbox-item input { margin-top:2px; flex-shrink:0; accent-color:var(--blue-accent); width:15px; height:15px; }
+@media (max-width:700px) { .submit-steps { grid-template-columns:1fr 1fr; } }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="issn-badge">ISSN: 2584-8119 (Online)</span>
+      <span class="topbar-divider">|</span>
+      <span>Peer-Reviewed &nbsp;·&nbsp; Open Access &nbsp;·&nbsp; DOI: 10.12345/ijitra</span>
+    </div>
+    <div class="topbar-right">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-brand-row">
+    <div class="journal-logo">
+      <div class="logo-abbr">IJ</div>
+      <div class="logo-sub">ITRA</div>
+    </div>
+    <div class="journal-title-block">
+      <div class="journal-abbr-name"><span>IJITRA</span></div>
+      <div class="journal-full-name">International Journal of Innovative Technology, Innovation and Research Applications</div>
+    </div>
+    <div class="header-actions">
+      <a href="submit.html" class="btn-submit">✦ Submit Manuscript</a>
+      <div class="header-metrics">
+        <span><span class="metric-dot"></span> Impact Factor: 6.142</span>
+        <span><span class="metric-dot"></span> H-Index: 14</span>
+        <span><span class="metric-dot"></span> CiteScore: 4.8</span>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <a href="about.html" class="nav-link">About <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">About IJITRA</a>
+          <a href="editorial-board.html">Editorial Board</a>
+          <a href="ethics.html">Ethics &amp; Policy</a>
+          <a href="indexing.html">Indexing</a>
+        </div>
+      </div>
+      <a href="editorial-board.html" class="nav-link">Editorial Board</a>
+      <div class="nav-item">
+        <a href="current-issue.html" class="nav-link">Issues <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="current-issue.html">Current Issue</a>
+          <a href="archives.html">Archives</a>
+          <a href="special-issues.html">Special Issues</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="guidelines.html" class="nav-link">For Authors <span class="arrow">▾</span></a>
+        <div class="dropdown">
+          <a href="guidelines.html">Author Guidelines</a>
+          <a href="submit.html">Submit Manuscript</a>
+          <a href="review-process.html">Review Process</a>
+          <a href="apc.html">APC / Charges</a>
+        </div>
+      </div>
+      <a href="indexing.html" class="nav-link">Indexing</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="nav-search-wrap">
+        <input id="searchInput" class="nav-search-input" type="text" placeholder="Search articles…">
+        <button id="searchBtn" class="nav-search-btn">Search</button>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="page-banner">
+  <div class="page-banner-inner">
+    <div class="page-breadcrumb"><a href="index.html">Home</a> › Submit Manuscript</div>
+    <h1>Submit Manuscript</h1>
+    <p>Submit your research to IJITRA for rapid, rigorous peer review and open-access publication.</p>
+  </div>
+</div>
+
+<div class="main-wrapper wide-sidebar">
+  <main>
+
+    <div class="alert alert-info mb-24">
+      <span>📖</span>
+      <span>Before submitting, please review our <a href="guidelines.html" style="color:var(--blue-accent);font-weight:600;">Author Guidelines</a> and <a href="ethics.html" style="color:var(--blue-accent);font-weight:600;">Publication Ethics Policy</a>. Ensure your manuscript similarity is ≤15%.</span>
+    </div>
+
+    <!-- Progress Steps -->
+    <div class="submit-steps">
+      <div class="submit-step active"><div class="ss-num">1</div><div class="ss-label">Manuscript Info</div></div>
+      <div class="submit-step"><div class="ss-num">2</div><div class="ss-label">Upload Files</div></div>
+      <div class="submit-step"><div class="ss-num">3</div><div class="ss-label">Authors</div></div>
+      <div class="submit-step"><div class="ss-num">4</div><div class="ss-label">Declarations</div></div>
+      <div class="submit-step"><div class="ss-num">5</div><div class="ss-label">Review &amp; Submit</div></div>
+    </div>
+
+    <div class="card">
+      <div class="section-header mt-0">
+        <h2>Manuscript Details</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <form id="submissionForm">
+        <div class="form-group">
+          <label class="form-label">Manuscript Title <span class="required">*</span></label>
+          <input type="text" class="form-control" placeholder="Enter the full title of your manuscript" required>
+          <div class="form-hint">Maximum 20 words. Avoid abbreviations in the title.</div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Manuscript Type <span class="required">*</span></label>
+            <select class="form-control" required>
+              <option value="">— Select type —</option>
+              <option>Original Research Article</option>
+              <option>Review Article</option>
+              <option>Short Communication</option>
+              <option>Case Study</option>
+              <option>Technical Note</option>
+              <option>Letter to Editor</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Subject Area / Section <span class="required">*</span></label>
+            <select class="form-control" required>
+              <option value="">— Select section —</option>
+              <option>Artificial Intelligence &amp; Machine Learning</option>
+              <option>Computer Networks &amp; Cybersecurity</option>
+              <option>Internet of Things</option>
+              <option>Data Science &amp; Big Data</option>
+              <option>Cloud Computing</option>
+              <option>Software Engineering</option>
+              <option>Robotics &amp; Automation</option>
+              <option>Blockchain Technology</option>
+              <option>Image Processing &amp; Computer Vision</option>
+              <option>Natural Language Processing</option>
+              <option>Healthcare Informatics</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Abstract <span class="required">*</span></label>
+          <textarea class="form-control" rows="6" placeholder="Paste your abstract here (200–300 words)..." required style="min-height:140px;"></textarea>
+          <div class="form-hint">Abstract should summarize objective, methods, key results, and conclusions. Do not include citations or abbreviations.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Keywords <span class="required">*</span></label>
+          <input type="text" class="form-control" placeholder="e.g., Machine Learning, IoT, Neural Networks, Cybersecurity" required>
+          <div class="form-hint">5–8 keywords separated by commas. Avoid terms already in the title.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Cover Letter <span class="required">*</span></label>
+          <textarea class="form-control" rows="4" placeholder="Write a brief cover letter to the Editor-in-Chief explaining the significance of your work and confirming it is not under review elsewhere..." required></textarea>
+        </div>
+
+        <hr class="divider">
+        <div class="section-header">
+          <h2 style="font-size:18px;">Upload Manuscript Files</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Manuscript File (.docx or .pdf) <span class="required">*</span></label>
+          <div class="upload-zone" id="uploadZone">
+            <div class="upload-icon">📄</div>
+            <p><strong>Click to browse</strong> or drag and drop your file here</p>
+            <p style="font-size:11px;margin-top:6px;">Accepted formats: .docx, .doc, .pdf — Max size: 20MB</p>
+          </div>
+          <input type="file" id="fileInput" accept=".docx,.doc,.pdf" style="display:none;">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Corresponding Author Name <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Corresponding Author Email <span class="required">*</span></label>
+            <input type="email" class="form-control" placeholder="email@institution.edu" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Institution / University <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="Full institutional affiliation" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Country <span class="required">*</span></label>
+            <select class="form-control" required>
+              <option value="">— Select country —</option>
+              <option>India</option><option>United States</option><option>United Kingdom</option>
+              <option>China</option><option>Germany</option><option>Australia</option>
+              <option>Canada</option><option>Singapore</option><option>Japan</option>
+              <option>Saudi Arabia</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <hr class="divider">
+        <div class="section-header">
+          <h2 style="font-size:18px;">Declarations &amp; Agreements</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox" required> The manuscript has not been published elsewhere and is not currently under review in any other journal.</label>
+            <label class="checkbox-item"><input type="checkbox" required> All authors have read, approved, and agreed to the submission of this manuscript.</label>
+            <label class="checkbox-item"><input type="checkbox" required> The work complies with the ethical standards of the journal and all necessary approvals have been obtained.</label>
+            <label class="checkbox-item"><input type="checkbox" required> I agree to the IJITRA <a href="ethics.html" style="color:var(--blue-accent);">Publication Ethics Policy</a> and confirm the work is original.</label>
+            <label class="checkbox-item"><input type="checkbox" required> I understand that Article Processing Charges (APC) will apply upon acceptance of the manuscript.</label>
+            <label class="checkbox-item"><input type="checkbox"> <span>We have no conflicts of interest to disclose. <em>(Leave unchecked and describe below if you have conflicts)</em></span></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Suggested Reviewers (Optional)</label>
+          <textarea class="form-control" rows="3" placeholder="Name, Institution, Email — one per line (suggest 2–4 qualified reviewers in your field)"></textarea>
+          <div class="form-hint">Suggesting reviewers is optional but helps accelerate the review process.</div>
+        </div>
+
+        <div style="text-align:right;margin-top:8px;">
+          <button type="submit" class="btn-form-submit" style="font-size:15px;padding:13px 32px;">
+            ✦ Submit Manuscript
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Track Submission -->
+    <div class="card mt-24" id="track">
+      <div class="section-header mt-0">
+        <h2>Track Your Submission</h2>
+        <div class="section-line"></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--text-mid);margin-bottom:16px;">Enter your manuscript ID (e.g., IJITRA-2025-1234) to check the current status of your submission.</p>
+      <div style="display:flex;gap:8px;">
+        <input type="text" class="form-control" placeholder="Enter Manuscript ID (e.g. IJITRA-2025-1234)" style="flex:1;">
+        <button class="btn-form-submit" style="padding:9px 20px;white-space:nowrap;">Track Status</button>
+      </div>
+    </div>
+  </main>
+
+  <aside>
+    <div class="sidebar-widget">
+      <div class="widget-header">📋 Before You Submit</div>
+      <div class="widget-body">
+        <ul class="notice-list">
+          <li><span class="notice-bullet">✓</span>Read <a href="guidelines.html">Author Guidelines</a></li>
+          <li><span class="notice-bullet">✓</span>Check similarity ≤15%</li>
+          <li><span class="notice-bullet">✓</span>Prepare cover letter</li>
+          <li><span class="notice-bullet">✓</span>Use manuscript template</li>
+          <li><span class="notice-bullet">✓</span>Include all author details</li>
+          <li><span class="notice-bullet">✓</span>IEEE reference format</li>
+          <li><span class="notice-bullet">✓</span>Figures at 300 DPI</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="widget-header">⏱️ Review Timeline</div>
+      <div class="widget-body">
+        <div class="metric-row"><span>Acknowledgement</span><span class="metric-val">24 hours</span></div>
+        <div class="metric-row"><span>Desk Review</span><span class="metric-val">3–5 days</span></div>
+        <div class="metric-row"><span>Peer Review</span><span class="metric-val">10–15 days</span></div>
+        <div class="metric-row"><span>Final Decision</span><span class="metric-val">~18 days</span></div>
+        <div class="metric-row"><span>Revision Deadline</span><span class="metric-val">14 days</span></div>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="widget-header">💳 APC Summary</div>
+      <div class="widget-body">
+        <div class="apc-row"><span>India Authors</span><span class="price">₹ 2,500</span></div>
+        <div class="apc-row"><span>SAARC Countries</span><span class="price">$ 60</span></div>
+        <div class="apc-row"><span>Other Countries</span><span class="price">$ 100</span></div>
+        <div class="apc-note">APC is charged <strong>only after acceptance</strong>. Waivers available for LDC researchers.</div>
+        <a href="apc.html" style="font-size:12px;color:var(--blue-accent);font-weight:600;display:block;margin-top:10px;">View Full APC Details →</a>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <div class="f-abbr">
+          <div style="background:linear-gradient(135deg,#c8961e,#e8b84b);color:#0a1628;width:34px;height:34px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:13px;flex-shrink:0;">IJ</div>
+          IJITRA
+        </div>
+        <p>International Journal of Innovative Technology, Innovation and Research Applications is a peer-reviewed, open-access multidisciplinary journal publishing original research in technology and engineering sciences. Published quarterly since 2022.</p>
+        <div class="footer-contact">
+          <span>📧 <a href="mailto:editor@ijitra.com">editor@ijitra.com</a></span>
+          <span>📞 +91-11-XXXX-XXXX</span>
+          <span>🏢 Publication Office, New Delhi – 110001, India</span>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn s-fb">Facebook</a>
+          <a href="#" class="social-btn s-li">LinkedIn</a>
+          <a href="#" class="social-btn s-tw">Twitter</a>
+          <a href="#" class="social-btn s-yt">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Journal</h4>
+        <ul>
+          <li><a href="about.html">About IJITRA</a></li>
+          <li><a href="editorial-board.html">Editorial Board</a></li>
+          <li><a href="ethics.html">Peer Review Policy</a></li>
+          <li><a href="ethics.html">Publication Ethics</a></li>
+          <li><a href="about.html">Open Access Policy</a></li>
+          <li><a href="ethics.html">Plagiarism Policy</a></li>
+          <li><a href="ethics.html">Retraction Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Authors</h4>
+        <ul>
+          <li><a href="guidelines.html">Author Guidelines</a></li>
+          <li><a href="submit.html">Submit Manuscript</a></li>
+          <li><a href="submit.html">Track Submission</a></li>
+          <li><a href="guidelines.html">Article Template</a></li>
+          <li><a href="apc.html">APC Information</a></li>
+          <li><a href="review-process.html">Review Process</a></li>
+          <li><a href="contact.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="current-issue.html">Current Issue</a></li>
+          <li><a href="archives.html">All Archives</a></li>
+          <li><a href="special-issues.html">Special Issues</a></li>
+          <li><a href="archives.html">Most Cited</a></li>
+          <li><a href="archives.html">Most Downloaded</a></li>
+          <li><a href="indexing.html">Indexing</a></li>
+          <li><a href="contact.html">Announcements</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2025 IJITRA — All rights reserved.</div>
+    <div class="footer-bottom-right">
+      <span class="cc-badge">CC BY 4.0</span>
+      <a href="ethics.html">Privacy Policy</a>
+      <a href="ethics.html">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>
+// Upload zone drag & drop
+const zone = document.getElementById('uploadZone');
+const fileInput = document.getElementById('fileInput');
+if (zone) {
+  zone.addEventListener('click', () => fileInput.click());
+  zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('dragover'); });
+  zone.addEventListener('dragleave', () => zone.classList.remove('dragover'));
+  zone.addEventListener('drop', e => {
+    e.preventDefault(); zone.classList.remove('dragover');
+    const file = e.dataTransfer.files[0];
+    if (file) zone.innerHTML = `<div class="upload-icon">✅</div><p><strong>${file.name}</strong> selected (${(file.size/1024/1024).toFixed(2)} MB)</p>`;
+  });
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files[0];
+    if (file) zone.innerHTML = `<div class="upload-icon">✅</div><p><strong>${file.name}</strong> selected (${(file.size/1024/1024).toFixed(2)} MB)</p>`;
+  });
+}
+</script>
+</body>
+</html>

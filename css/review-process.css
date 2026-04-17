@@ -1,0 +1,183 @@
+/* ================================================================
+   review-process.css — Peer Review Process Page Styles
+   IJITRA Journal Website
+   ================================================================ */
+
+/* ── PROCESS FLOW DIAGRAM ────────────────────────────────────────── */
+.review-flow {
+  position: relative;
+  padding: 10px 0;
+}
+.review-flow::before {
+  content: '';
+  position: absolute;
+  left: 39px; top: 0; bottom: 0; width: 3px;
+  background: linear-gradient(to bottom, var(--blue-accent), var(--gold));
+  border-radius: 3px;
+}
+.review-step {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 0;
+  position: relative;
+}
+.review-step-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.review-step-num {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: var(--blue-accent);
+  color: white;
+  font-size: 16px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; z-index: 1;
+  box-shadow: 0 0 0 4px white, 0 0 0 6px var(--blue-accent);
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+.review-step-num.gold   { background: var(--gold); box-shadow: 0 0 0 4px white, 0 0 0 6px var(--gold); }
+.review-step-num.green  { background: var(--green); box-shadow: 0 0 0 4px white, 0 0 0 6px var(--green); }
+.review-step-num.red    { background: var(--red); box-shadow: 0 0 0 4px white, 0 0 0 6px var(--red); }
+.review-step-num.purple { background: #7b2d9e; box-shadow: 0 0 0 4px white, 0 0 0 6px #7b2d9e; }
+.review-step-line {
+  width: 3px; flex: 1; min-height: 24px;
+  background: transparent;
+}
+.review-step-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin-bottom: 16px;
+  flex: 1;
+  transition: var(--transition);
+}
+.review-step-card:hover {
+  box-shadow: var(--shadow-md);
+  border-left: 3px solid var(--blue-accent);
+  transform: translateX(2px);
+}
+.review-step-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 8px;
+}
+.review-step-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 17px; font-weight: 600; color: var(--navy);
+}
+.review-step-duration {
+  background: var(--cream-dark); color: var(--text-light);
+  font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 10px;
+  white-space: nowrap; margin-left: 12px;
+}
+.review-step-desc { font-size: 13px; color: var(--text-mid); line-height: 1.7; }
+.review-step-details {
+  margin-top: 10px; padding-top: 10px;
+  border-top: 1px solid var(--cream-dark);
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+.step-detail-pill {
+  background: #e8f0fb; color: var(--blue-accent);
+  font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 10px;
+}
+.step-detail-pill.gold   { background: var(--gold-pale); color: #8b6000; }
+.step-detail-pill.green  { background: #e8f8e8; color: #1a6c2a; }
+
+/* ── DECISION OUTCOME CARDS ──────────────────────────────────────── */
+.decision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 20px;
+}
+.decision-card {
+  border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--border); transition: var(--transition);
+}
+.decision-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.decision-card-top {
+  padding: 14px 18px;
+  color: white;
+  display: flex; align-items: center; gap: 10px;
+}
+.decision-card-top.accept  { background: var(--green); }
+.decision-card-top.minor   { background: var(--blue-accent); }
+.decision-card-top.major   { background: var(--gold); }
+.decision-card-top.reject  { background: var(--red); }
+.decision-icon { font-size: 22px; }
+.decision-label { font-size: 14px; font-weight: 700; }
+.decision-pct { margin-left: auto; font-size: 22px; font-weight: 800; font-family: 'Playfair Display', serif; }
+.decision-card-body {
+  background: white; padding: 14px 18px;
+  font-size: 13px; color: var(--text-mid); line-height: 1.7;
+}
+.decision-card-body ul {
+  padding-left: 16px; list-style: disc; margin-top: 6px;
+}
+.decision-card-body ul li { margin-bottom: 4px; }
+
+/* ── REVIEWER CRITERIA ───────────────────────────────────────────── */
+.criteria-table { width: 100%; border-collapse: collapse; }
+.criteria-table th {
+  background: var(--navy); color: white;
+  padding: 10px 16px; text-align: left; font-size: 12px; font-weight: 700;
+}
+.criteria-table td {
+  padding: 10px 16px; border-bottom: 1px solid var(--cream-dark);
+  font-size: 13px; color: var(--text-mid); vertical-align: top;
+}
+.criteria-table tr:last-child td { border-bottom: none; }
+.criteria-table tr:hover td { background: var(--cream); }
+.weight-bar-wrap { display: flex; align-items: center; gap: 8px; }
+.weight-bar {
+  height: 8px; border-radius: 4px; background: var(--blue-accent);
+  min-width: 20px;
+}
+.weight-label { font-size: 11px; font-weight: 700; color: var(--blue-accent); }
+
+/* ── TIMELINE SUMMARY ────────────────────────────────────────────── */
+.timeline-summary {
+  display: grid; grid-template-columns: repeat(6, 1fr);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; margin-top: 20px;
+}
+.ts-cell {
+  padding: 14px 12px; text-align: center;
+  border-right: 1px solid var(--border); background: white;
+  transition: var(--transition);
+}
+.ts-cell:last-child { border-right: none; }
+.ts-cell:hover { background: var(--cream); }
+.ts-days {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 700; color: var(--navy); display: block;
+}
+.ts-label { font-size: 10.5px; color: var(--text-light); margin-top: 3px; line-height: 1.4; }
+.ts-total { background: var(--navy); }
+.ts-total .ts-days { color: var(--gold-light); }
+.ts-total .ts-label { color: #8aafd4; }
+
+/* ── APPEAL PROCESS ──────────────────────────────────────────────── */
+.appeal-box {
+  background: #fff8e1; border: 1px solid #f0d898;
+  border-left: 5px solid var(--gold); border-radius: var(--radius); padding: 20px 22px;
+}
+.appeal-box h3 {
+  font-family: 'EB Garamond', serif; font-size: 18px; color: var(--navy); margin-bottom: 8px;
+}
+.appeal-box p { font-size: 13.5px; color: var(--text-mid); line-height: 1.75; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────── */
+@media (max-width: 760px) {
+  .decision-grid { grid-template-columns: 1fr; }
+  .timeline-summary { grid-template-columns: 1fr 1fr 1fr; }
+  .review-flow::before { left: 21px; }
+  .review-step-num { width: 26px; height: 26px; font-size: 12px; }
+}
+@media (max-width: 500px) {
+  .timeline-summary { grid-template-columns: 1fr 1fr; }
+}
